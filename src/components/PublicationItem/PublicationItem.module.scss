@@ -1,0 +1,101 @@
+@import '../../constants/colors.scss';
+
+.container {
+	margin-top: 1.5em;
+	display: grid;
+	grid-template: 70px 70vh 60px / 1fr;
+	width: 55%;
+}
+
+.header {
+	border-bottom: 1px solid $borderColor;
+	display: flex;
+	align-items: center;
+	padding: 0.3em;
+
+	.photo {
+		width: 48.16px;
+		height: 48.16px;
+		border-radius: 50%;
+		border: 2px solid $borderColor;
+		margin: 0 0.75em;
+	}
+
+	.nickname {
+		font-weight: bold;
+	}
+}
+
+.footer {
+	border-top: 1px solid $borderColor;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.apply {
+		width: 43px;
+		height: 43px;
+		border-radius: 50%;
+		border: 2px solid $borderColor;
+		transition: all 0.2s;
+
+		&:hover {
+			cursor: pointer;
+			background-color: $mainColor;
+			transition: all 0.2s;
+		}
+	}
+}
+
+.section {
+	background-color: #8e7fb5da;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.contentBox {
+		background-color: whitesmoke;
+		height: 80%;
+		width: 80%;
+		border-radius: 6px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.content {
+			color: $black;
+
+			.main {
+				margin: 0 0 1.5em 0;
+			}
+
+			.title {
+				color: $mainColor;
+				margin: 1.5em 0 0 0;
+			}
+
+			.text {
+				border: 1px solid $borderColor;
+				background-color: $gray;
+				border-radius: 6px;
+				padding: 0.75em;
+				margin: 0.1em 0 0 0;
+			}
+
+			.price {
+				color: $mainColor;
+			}
+
+			.title,
+			.main {
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+.container {
+	border: 1px solid $borderColor;
+	background-color: white;
+}

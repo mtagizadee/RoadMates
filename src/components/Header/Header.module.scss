@@ -1,0 +1,23 @@
+@import '../../constants/colors.scss';
+
+.header {
+	background-color: white;
+	position: fixed;
+	height: 65px;
+	width: 100%;
+	border-bottom: 1px solid $borderColor;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.list {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.search {
+	margin: 0.75em;
+}

@@ -1,0 +1,100 @@
+@import '../../constants/colors.scss';
+
+.container {
+	display: grid;
+	grid-template: 70px 1fr 60px / 1fr 1fr;
+}
+
+.section {
+	grid-row: 2 / 5;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	animation: moveDown 1s ease-in-out forwards;
+	margin-top: 10em;
+}
+
+.subhead {
+	font-size: 24px;
+	margin-bottom: 0;
+	font-weight: bold;
+}
+
+.logo {
+	font-weight: bold;
+	font-size: 2.5rem;
+	margin-bottom: 0;
+}
+
+.span {
+	color: $mainColor;
+}
+
+.aside {
+	grid-row: 2 / 5;
+	width: 100%;
+	height: 100%;
+	animation: introload 1s ease-in-out forwards;
+}
+
+.arrow {
+	stroke: white;
+	position: absolute;
+	top: 15em;
+	width: 1.5em;
+
+	.path {
+		fill: $black;
+	}
+
+	animation: moveArrow 1s alternate-reverse infinite;
+}
+
+.button {
+	position: absolute;
+	border: none;
+	background-color: $mainColor;
+	color: white;
+	font-weight: bold;
+	padding: 1.5em;
+
+	border-radius: 6px;
+	top: 30em;
+	font-size: 16px;
+	transition: all 0.2s;
+
+	&:hover {
+		background-color: $black;
+		transition: all 0.2s;
+		cursor: pointer;
+	}
+}
+
+@keyframes introload {
+	from {
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	}
+	to {
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+}
+
+@keyframes moveArrow {
+	from {
+		transform: translateY(-30px);
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+
+@keyframes moveDown {
+	from {
+		transform: translateY(-100px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}

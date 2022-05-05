@@ -1,0 +1,22 @@
+@import '../../constants/colors.scss';
+
+.wrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.logo {
+	width: 55px;
+	height: 55px;
+	margin-right: 0.75em;
+}
+
+.name {
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+
+.span {
+	color: $mainColor;
+}

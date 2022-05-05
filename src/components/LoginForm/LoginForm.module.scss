@@ -1,0 +1,25 @@
+@import '../../constants/colors.scss';
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: white;
+	width: 30%;
+	height: 70vh;
+	border-radius: 30px;
+}
+
+.logo {
+	font-weight: bold;
+	font-size: 1.5rem;
+
+	.span {
+		color: $mainColor;
+	}
+}
+
+.input {
+	margin-bottom: 0.75em;
+}
